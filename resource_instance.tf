@@ -1,5 +1,5 @@
 resource "aws_instance" "arrow_roman-numerals_ec2" {
-  ami           = "ami-006dcf34c09e50022"   # linux
+  ami           = "ami-006dcf34c09e50022"   # Amazon linux 2
   instance_type = var.instance_type
   key_name      = var.instance_keypair
   vpc_security_group_ids = [ aws_security_group.arrow.id ]
