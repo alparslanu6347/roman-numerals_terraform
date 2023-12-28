@@ -27,7 +27,7 @@ variable "instance_type" {
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
   type        = string
-  default     = "arrowlevent"
+  default     = "arrowlevent"       # write yours
 }
 
 variable "instance_name" {
@@ -44,12 +44,12 @@ variable "enable_public_ip" {
 
 
 resource "aws_instance" "arrow_roman-numerals_ec2" {
-  ami                         = "ami-041feb57c611358bd" # Amazon Linux 2023
+  ami                         = "ami-06aa3f7caf3a30282"         # Ubuntu 20.04
   instance_type               = var.instance_type
   key_name                    = var.instance_keypair
   vpc_security_group_ids      = [aws_security_group.arrow.id]
   associate_public_ip_address = var.enable_public_ip
-  subnet_id                   = "subnet-069d7f45d2659c70c" ## us-east-1a
+  subnet_id                   = "subnet-01184bdfee33d5c74"      # us-east-1a # write yours
   user_data                   = file("${path.module}/userdata.sh")
   tags = {
     Name = var.instance_name
@@ -91,9 +91,4 @@ resource "aws_security_group" "arrow" {
 output "roman-numerals_instance_public-ip" {
   description = "EC2 Instance Public IP"
   value       = aws_instance.arrow_roman-numerals_ec2.public_ip
-}
-
-output "roman-numerals_instance_public-dns" {
-  description = "EC2 Instance Public DNS"
-  value       = aws_instance.arrow_roman-numerals_ec2.public_dns
 }
