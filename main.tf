@@ -44,7 +44,7 @@ variable "enable_public_ip" {
 
 
 resource "aws_instance" "arrow_roman-numerals_ec2" {
-  ami                         = "ami-06aa3f7caf3a30282"         # Ubuntu 20.04
+  ami                         = "ami-06aa3f7caf3a30282"         # Ubuntu 20.04  ; maybe you need to change because it may not be up-to-date
   instance_type               = var.instance_type
   key_name                    = var.instance_keypair
   vpc_security_group_ids      = [aws_security_group.arrow.id]
