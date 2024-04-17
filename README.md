@@ -1,6 +1,6 @@
 # Gitlab Project
 
-# Part-1 :Create gitlab project/repository `roman-numerals-converter`
+## Part-1 :Create gitlab project/repository `roman-numerals-converter`
 - Go to gitlab
 
 - Create gitlab project/repository
@@ -12,13 +12,13 @@
     Click `Create project`
 
 
-# Part-2 : Clone your repository to Local
+## Part-2 : Clone your repository to Local
 
 ```bash (Your Local : roman-numerals-converter)
 git clone https://*****TOKEN*****@gitlab.com/arrowlevent/roman-numerals-converter.git
 ```
 
-# Part-3 : Prepare your Application Files
+## Part-3 : Prepare your Application Files
 
 1. `userdata.sh`  ***`.gitlab-ci.yml` dosyalarının hazırlanışını inceleyince userdata.sh dosyasının içeriğini daha net anlayabilirsin.***
 
@@ -477,14 +477,14 @@ git push origin     # şifre soracak -> TOKEN copy-paste enter
   - `Build` -- `Pipelines`
 
 
-# Part-5 : AWS Management Console
+## Part-5 : AWS Management Console
 
 - Go to AWS Management Console -->> `ec2-instance` ve `sec-grp` oluştuğunu gözlemle 
 
 - uygulamayı görmek için : `http://Public IP of ec2:80`
 
 
-# Resources
+## Resources
 
 - https://docs.gitlab.com/
 
