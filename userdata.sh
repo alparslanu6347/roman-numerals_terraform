@@ -10,12 +10,12 @@ git --version || apt install git -y
 wget --version || apt install wget -y 
 cd /home/ubuntu
 
-# Burada github repomu kullandım
+# github repository
 wget -P templates https://raw.githubusercontent.com/alparslanu6347/roman-numerals_terraform/main/templates/index.html
 wget -P templates https://raw.githubusercontent.com/alparslanu6347/roman-numerals_terraform/main/templates/result.html
 wget https://raw.githubusercontent.com/alparslanu6347/roman-numerals_terraform/main/app.py
 
-# BURADA gitlab REPOMU KULLANDIM
+# gitlab repository
 # wget -P templates https://gitlab.com/arrowlevent/roman-numerals-converter/-/raw/main/templates/index.html
 # wget -P templates https://gitlab.com/arrowlevent/roman-numerals-converter/-/raw/main/templates/result.html
 # wget https://gitlab.com/arrowlevent/roman-numerals-converter/-/raw/main/app.py
